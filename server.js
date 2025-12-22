@@ -64,7 +64,8 @@ app.get("/api/pyq/:branch", (req, res) => {
 // Serve PDF files
 app.use("/main", express.static(path.join(BASE_DIR)));
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () =>
-  console.log(` Backend running at http://localhost:${PORT}`)
+  console.log(`✅ Backend running on port ${PORT}`)
 );
