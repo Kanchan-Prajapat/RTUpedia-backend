@@ -5,28 +5,51 @@ import cors from "cors";
 
 const app = express();
 
-// Middlewares
-app.use(cors());
+/* =======================
+   ✅ CORS CONFIG (IMPORTANT)
+   ======================= */
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:5173",
+      "https://rtupedia.vercel.app"
+    ],
+    methods: ["GET"],
+    allowedHeaders: ["Content-Type"]
+  })
+);
+
+// handle preflight requests
+app.options("*", cors());
+
 app.use(express.json());
 
-// ✅ Health check (Render / browser)
+/* =======================
+   ✅ HEALTH CHECK
+   ======================= */
 app.get("/", (req, res) => {
   res.status(200).send("RTUpedia Backend is Live ✅");
 });
 
-// Base directory for PDFs
+/* =======================
+   📂 FILE SYSTEM SETUP
+   ======================= */
 const BASE_DIR = path.join(process.cwd(), "main");
 
-// ✅ Backend base URL (important for frontend)
-const BASE_URL =
-  process.env.BASE_URL || "https://rtupedia-backend.onrender.com";
-
-// 🔒 Ensure main/ folder exists (prevents crash)
 if (!fs.existsSync(BASE_DIR)) {
   fs.mkdirSync(BASE_DIR, { recursive: true });
 }
 
-// 📌 Fetch PYQs for a specific branch & semester
+/* =======================
+   🌐 BASE URL FOR FRONTEND
+   ======================= */
+const BASE_URL =
+  process.env.BASE_URL || "https://rtupedia-backend.onrender.com";
+
+/* =======================
+   📌 API: BRANCH + SEMESTER
+   ======================= */
 app.get("/api/pyq/:branch/:semester", (req, res) => {
   const { branch, semester } = req.params;
 
@@ -40,21 +63,23 @@ app.get("/api/pyq/:branch/:semester", (req, res) => {
     .readdirSync(folderPath)
     .filter(file => file.toLowerCase().endsWith(".pdf"));
 
-  const response = files.map(filename => ({
-    title: filename.replace(".pdf", ""),
-    pdf: `${BASE_URL}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
-      filename
-    )}`,
-  }));
-
-  res.json(response);
+  res.json(
+    files.map(filename => ({
+      title: filename.replace(".pdf", ""),
+      pdf: `${BASE_URL}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
+        filename
+      )}`
+    }))
+  );
 });
 
-// 📌 Fetch ALL PYQs for a branch
+/* =======================
+   📌 API: ALL PYQs OF BRANCH
+   ======================= */
 app.get("/api/pyq/:branch", (req, res) => {
   const { branch } = req.params;
-
   const branchPath = path.join(BASE_DIR, branch.toUpperCase());
+
   if (!fs.existsSync(branchPath)) {
     return res.json([]);
   }
@@ -73,7 +98,7 @@ app.get("/api/pyq/:branch", (req, res) => {
           semester,
           pdf: `${BASE_URL}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
             filename
-          )}`,
+          )}`
         });
       });
   });
@@ -81,10 +106,14 @@ app.get("/api/pyq/:branch", (req, res) => {
   res.json(output);
 });
 
-// 📂 Serve PDF files
+/* =======================
+   📂 STATIC PDF SERVING
+   ======================= */
 app.use("/main", express.static(BASE_DIR));
 
-// 🚀 Start server
+/* =======================
+   🚀 START SERVER
+   ======================= */
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Backend running on port ${PORT}`);
