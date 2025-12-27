@@ -6,7 +6,7 @@ import cors from "cors";
 const app = express();
 
 /* =======================
-   ✅ CORS CONFIG (IMPORTANT)
+   ✅ CORS CONFIG
    ======================= */
 app.use(
   cors({
@@ -20,9 +20,7 @@ app.use(
   })
 );
 
-// handle preflight requests
 app.options("*", cors());
-
 app.use(express.json());
 
 /* =======================
@@ -33,7 +31,7 @@ app.get("/", (req, res) => {
 });
 
 /* =======================
-   📂 FILE SYSTEM SETUP
+   📂 FILE SYSTEM
    ======================= */
 const BASE_DIR = path.join(process.cwd(), "main");
 
@@ -42,22 +40,24 @@ if (!fs.existsSync(BASE_DIR)) {
 }
 
 /* =======================
-   🌐 BASE URL FOR FRONTEND
+   🌐 BASE URL (AUTO-DETECT)
    ======================= */
-const BASE_URL =
-  process.env.BASE_URL || "https://rtupedia-backend.onrender.com";
+const getBaseUrl = (req) => {
+  return `${req.protocol}://${req.get("host")}`;
+};
 
 /* =======================
    📌 API: BRANCH + SEMESTER
    ======================= */
 app.get("/api/pyq/:branch/:semester", (req, res) => {
   const { branch, semester } = req.params;
-
   const folderPath = path.join(BASE_DIR, branch.toUpperCase(), semester);
 
   if (!fs.existsSync(folderPath)) {
     return res.json([]);
   }
+
+  const baseUrl = getBaseUrl(req);
 
   const files = fs
     .readdirSync(folderPath)
@@ -66,7 +66,7 @@ app.get("/api/pyq/:branch/:semester", (req, res) => {
   res.json(
     files.map(filename => ({
       title: filename.replace(".pdf", ""),
-      pdf: `${BASE_URL}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
+      pdf: `${baseUrl}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
         filename
       )}`
     }))
@@ -84,6 +84,7 @@ app.get("/api/pyq/:branch", (req, res) => {
     return res.json([]);
   }
 
+  const baseUrl = getBaseUrl(req);
   let output = [];
 
   fs.readdirSync(branchPath).forEach(semester => {
@@ -96,7 +97,7 @@ app.get("/api/pyq/:branch", (req, res) => {
         output.push({
           title: filename.replace(".pdf", ""),
           semester,
-          pdf: `${BASE_URL}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
+          pdf: `${baseUrl}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
             filename
           )}`
         });
