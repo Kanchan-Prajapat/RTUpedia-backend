@@ -16,12 +16,11 @@ router.post("/", async (req, res) => {
   try {
     const { name, email, message, rating } = req.body;
 
-    // Basic validation
     if (!name || !email || !message || !rating) {
-      return res.status(400).json({ success: false, message: "Missing fields" });
+      return res.status(400).json({ success: false });
     }
 
-    // Save review to DB
+    // ✅ SAVE FIRST (CRITICAL)
     const review = await Review.create({
       name,
       email,
@@ -30,9 +29,27 @@ router.post("/", async (req, res) => {
       approved: false
     });
 
-    // Send emails (NON-BLOCKING)
-    mailAdmin({ name, email, message, rating }).catch(console.error);
-    mailUserConfirmation({ name, email }).catch(console.error);
+    // ✅ RESPOND IMMEDIATELY
+    res.json({
+      success: true,
+      message: "Review submitted for approval"
+    });
+
+    // 🔥 EMAILS (BACKGROUND, SAFE)
+    Promise.resolve()
+      .then(() => mailAdmin({ name, email, message, rating }))
+      .catch(err => console.error("Admin mail failed:", err.message));
+
+    Promise.resolve()
+      .then(() => mailUserConfirmation({ name, email }))
+      .catch(err => console.error("User mail failed:", err.message));
+
+  } catch (err) {
+    console.error("Review submit error:", err);
+    res.status(500).json({ success: false });
+  }
+});
+
 
     return res.json({
       success: true,
