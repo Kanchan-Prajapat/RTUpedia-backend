@@ -2,12 +2,27 @@ import express from "express";
 import fs from "fs";
 import path from "path";
 import cors from "cors";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import reviewRoutes from "./routes/review.routes.js";
+import adminRoutes from "./routes/admin.routes.js";
+import { fileURLToPath } from "url";
 
-const app = express();
 
 /* =======================
-   ✅ CORS CONFIG
-   ======================= */
+   LOAD ENV
+======================= */
+const app = express();
+app.use(express.json());
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.join(__dirname, ".env") });
+
+/* =======================
+   MIDDLEWARE
+======================= */
+
 app.use(
   cors({
     origin: [
@@ -15,24 +30,46 @@ app.use(
       "http://localhost:5173",
       "https://rtupedia.vercel.app"
     ],
-    methods: ["GET"],
-    allowedHeaders: ["Content-Type"]
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "x-admin-key"
+    ]
   })
 );
 
-app.options("*", cors());
-app.use(express.json());
 
 /* =======================
-   ✅ HEALTH CHECK
-   ======================= */
+   MONGODB CONNECTION
+======================= */
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("✅ MongoDB Connected"))
+  .catch((err) => {
+    console.error("❌ MongoDB Error:", err.message);
+    process.exit(1);
+  });
+
+/* =======================
+   HEALTH CHECK
+======================= */
 app.get("/", (req, res) => {
-  res.status(200).send("RTUpedia Backend is Live ✅");
+  res.status(200).json({
+    status: "OK",
+    message: "RTUpedia Backend is Live ✅"
+  });
 });
 
 /* =======================
-   📂 FILE SYSTEM
-   ======================= */
+   REVIEW ROUTES
+======================= */
+app.use("/api/reviews", reviewRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/admin", adminRoutes);
+/* =======================
+   FILE SYSTEM (PYQs)
+======================= */
 const BASE_DIR = path.join(process.cwd(), "main");
 
 if (!fs.existsSync(BASE_DIR)) {
@@ -40,18 +77,21 @@ if (!fs.existsSync(BASE_DIR)) {
 }
 
 /* =======================
-   🌐 BASE URL (AUTO-DETECT)
-   ======================= */
-const getBaseUrl = (req) => {
-  return `${req.protocol}://${req.get("host")}`;
-};
+   UTILS
+======================= */
+const getBaseUrl = (req) =>
+  `${req.protocol}://${req.get("host")}`;
 
 /* =======================
-   📌 API: BRANCH + SEMESTER
-   ======================= */
+   API: PYQ BY BRANCH + SEM
+======================= */
 app.get("/api/pyq/:branch/:semester", (req, res) => {
   const { branch, semester } = req.params;
-  const folderPath = path.join(BASE_DIR, branch.toUpperCase(), semester);
+  const folderPath = path.join(
+    BASE_DIR,
+    branch.toUpperCase(),
+    semester
+  );
 
   if (!fs.existsSync(folderPath)) {
     return res.json([]);
@@ -61,10 +101,10 @@ app.get("/api/pyq/:branch/:semester", (req, res) => {
 
   const files = fs
     .readdirSync(folderPath)
-    .filter(file => file.toLowerCase().endsWith(".pdf"));
+    .filter((file) => file.toLowerCase().endsWith(".pdf"));
 
   res.json(
-    files.map(filename => ({
+    files.map((filename) => ({
       title: filename.replace(".pdf", ""),
       pdf: `${baseUrl}/main/${branch.toUpperCase()}/${semester}/${encodeURIComponent(
         filename
@@ -74,11 +114,14 @@ app.get("/api/pyq/:branch/:semester", (req, res) => {
 });
 
 /* =======================
-   📌 API: ALL PYQs OF BRANCH
-   ======================= */
+   API: ALL PYQs (BRANCH)
+======================= */
 app.get("/api/pyq/:branch", (req, res) => {
   const { branch } = req.params;
-  const branchPath = path.join(BASE_DIR, branch.toUpperCase());
+  const branchPath = path.join(
+    BASE_DIR,
+    branch.toUpperCase()
+  );
 
   if (!fs.existsSync(branchPath)) {
     return res.json([]);
@@ -87,13 +130,13 @@ app.get("/api/pyq/:branch", (req, res) => {
   const baseUrl = getBaseUrl(req);
   let output = [];
 
-  fs.readdirSync(branchPath).forEach(semester => {
+  fs.readdirSync(branchPath).forEach((semester) => {
     const semPath = path.join(branchPath, semester);
     if (!fs.lstatSync(semPath).isDirectory()) return;
 
     fs.readdirSync(semPath)
-      .filter(file => file.toLowerCase().endsWith(".pdf"))
-      .forEach(filename => {
+      .filter((file) => file.toLowerCase().endsWith(".pdf"))
+      .forEach((filename) => {
         output.push({
           title: filename.replace(".pdf", ""),
           semester,
@@ -108,14 +151,25 @@ app.get("/api/pyq/:branch", (req, res) => {
 });
 
 /* =======================
-   📂 STATIC PDF SERVING
-   ======================= */
+   STATIC FILE SERVING
+======================= */
 app.use("/main", express.static(BASE_DIR));
 
 /* =======================
-   🚀 START SERVER
-   ======================= */
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`✅ Backend running on port ${PORT}`);
+   ERROR HANDLER
+======================= */
+app.use((err, req, res, next) => {
+  console.error("🔥 Error:", err.message);
+  res.status(500).json({ message: "Internal Server Error" });
 });
+
+/* =======================
+   START SERVER
+======================= */
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 RTUpedia Backend running on port ${PORT}`);
+});
+
+
