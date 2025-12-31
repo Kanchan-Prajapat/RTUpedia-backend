@@ -4,25 +4,28 @@ import path from "path";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import reviewRoutes from "./routes/review.routes.js";
-import adminRoutes from "./routes/admin.routes.js";
 import { fileURLToPath } from "url";
 
+import reviewRoutes from "./routes/review.routes.js";
+import adminRoutes from "./routes/admin.routes.js";
 
 /* =======================
-   LOAD ENV
+   BASIC SETUP
 ======================= */
 const app = express();
 app.use(express.json());
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-dotenv.config({ path: path.join(__dirname, ".env") });
+/* =======================
+   LOAD ENV (LOCAL + RENDER)
+======================= */
+dotenv.config();
 
 /* =======================
-   MIDDLEWARE
+   CORS
 ======================= */
-
 app.use(
   cors({
     origin: [
@@ -39,9 +42,8 @@ app.use(
   })
 );
 
-
 /* =======================
-   MONGODB CONNECTION
+   MONGODB
 ======================= */
 mongoose
   .connect(process.env.MONGO_URI)
@@ -62,13 +64,13 @@ app.get("/", (req, res) => {
 });
 
 /* =======================
-   REVIEW ROUTES
+   REVIEW ROUTES (IMPORTANT)
 ======================= */
 app.use("/api/reviews", reviewRoutes);
 app.use("/api/admin", adminRoutes);
-app.use("/admin", adminRoutes);
+
 /* =======================
-   FILE SYSTEM (PYQs)
+   FILE SYSTEM (PYQs) — DO NOT TOUCH
 ======================= */
 const BASE_DIR = path.join(process.cwd(), "main");
 
@@ -87,6 +89,7 @@ const getBaseUrl = (req) =>
 ======================= */
 app.get("/api/pyq/:branch/:semester", (req, res) => {
   const { branch, semester } = req.params;
+
   const folderPath = path.join(
     BASE_DIR,
     branch.toUpperCase(),
@@ -118,6 +121,7 @@ app.get("/api/pyq/:branch/:semester", (req, res) => {
 ======================= */
 app.get("/api/pyq/:branch", (req, res) => {
   const { branch } = req.params;
+
   const branchPath = path.join(
     BASE_DIR,
     branch.toUpperCase()
@@ -171,5 +175,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 RTUpedia Backend running on port ${PORT}`);
 });
-
-
