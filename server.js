@@ -8,6 +8,9 @@ import { fileURLToPath } from "url";
 
 import reviewRoutes from "./routes/review.routes.js";
 import adminRoutes from "./routes/admin.routes.js";
+import authRoutes from "./routes/authRoutes.js";
+import adminReviewRoutes from "./routes/adminReview.routes.js";
+
 
 /* =======================
    BASIC SETUP
@@ -68,7 +71,8 @@ app.get("/", (req, res) => {
 ======================= */
 app.use("/api/reviews", reviewRoutes);
 app.use("/api/admin", adminRoutes);
-
+app.use("/api/auth", authRoutes);
+app.use("/api/admin/reviews", adminReviewRoutes);
 /* =======================
    FILE SYSTEM (PYQs) — DO NOT TOUCH
 ======================= */

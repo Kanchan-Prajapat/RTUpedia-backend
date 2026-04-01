@@ -5,25 +5,31 @@ import {
   mailUserConfirmation
 } from "../services/mail.service.js";
 
+import { protect } from "../middleware/authMiddleware.js"; // 🔥 ADD THIS
+
 const router = express.Router();
 
 /* =========================
-   Submit a Review
+   Submit a Review (PROTECTED 🔐)
 ========================= */
-router.post("/", async (req, res) => {
+router.post("/", protect, async (req, res) => {
   try {
-    const { name, email, message, rating } = req.body;
+    const { message, rating } = req.body;
 
-    // Validation
-    if (!name || !email || !message || !rating) {
+    // 🔥 GET USER FROM TOKEN
+    const name = req.user.name;
+    const email = req.user.email;
+
+    if (!message || !rating) {
       return res.status(400).json({
         success: false,
         message: "Missing fields"
       });
     }
 
-    // ✅ SAVE TO DB FIRST
+    // ✅ SAVE REVIEW (linked to user)
     await Review.create({
+      user: req.user._id, // 🔥 important
       name,
       email,
       message,
@@ -31,13 +37,12 @@ router.post("/", async (req, res) => {
       approved: false
     });
 
-    // ✅ RESPOND IMMEDIATELY
     res.json({
       success: true,
       message: "Review submitted for approval"
     });
 
-    // 🔥 EMAILS (NON-BLOCKING, SAFE)
+    // 🔥 EMAILS (same as before)
     Promise.resolve()
       .then(() =>
         mailAdmin({ name, email, message, rating })
@@ -64,7 +69,7 @@ router.post("/", async (req, res) => {
 });
 
 /* =========================
-   Get Approved Reviews
+   Get Approved Reviews (PUBLIC)
 ========================= */
 router.get("/", async (req, res) => {
   try {
