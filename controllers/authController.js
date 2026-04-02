@@ -1,83 +1,52 @@
 import User from "../models/User.js";
 import jwt from "jsonwebtoken";
-import crypto from "crypto";
+import { OAuth2Client } from "google-auth-library";
+
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 const generateToken = (id) =>
   jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "7d" });
 
-// REGISTER
-export const registerUser = async (req, res) => {
-  const { name, email, password } = req.body;
-
-  const exists = await User.findOne({ email });
-  if (exists)
-    return res.status(400).json({ message: "User exists" });
-
-  const user = await User.create({ name, email, password });
-
-  res.json({
-    token: generateToken(user._id),
-    user: { name: user.name, email: user.email, _id: user._id },
-  });
-};
-
-// LOGIN
-export const loginUser = async (req, res) => {
-  const { email, password } = req.body;
-
-  const user = await User.findOne({ email });
-
-  if (!user || !(await user.comparePassword?.(password)))
-    return res.status(400).json({ message: "Invalid credentials" });
-
-  res.json({
-    token: generateToken(user._id),
-    user: { name: user.name, email: user.email, _id: user._id },
-  });
-};
-
-// FORGOT
-export const forgotPassword = async (req, res) => {
+// 🔥 GOOGLE ONLY AUTH
+export const googleAuth = async (req, res) => {
   try {
-    const user = await User.findOne({ email: req.body.email });
+    const { token } = req.body;
 
+    const ticket = await client.verifyIdToken({
+      idToken: token,
+      audience: process.env.GOOGLE_CLIENT_ID,
+    });
+
+    const payload = ticket.getPayload();
+
+    const { name, email, picture } = payload;
+
+    let user = await User.findOne({ email });
+
+    // ✅ create if not exist
     if (!user) {
-      return res.status(404).json({ message: "No user" });
+      user = await User.create({
+        name,
+        email,
+        password: "google_auth", // dummy
+        profileImage: picture,
+      });
     }
 
-    const token = crypto.randomBytes(32).toString("hex");
+    const jwtToken = generateToken(user._id);
 
-    user.resetPasswordToken = token;
-    user.resetPasswordExpire = Date.now() + 10 * 60 * 1000;
-
-    await user.save();
-
-    res.json({ resetToken: token });
+    res.json({
+      token: jwtToken,
+      user: {
+        _id: user._id,
+        name,
+        email,
+        profileImage: picture,
+      },
+    });
 
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Server error" });
+    res.status(500).json({ message: "Google login failed" });
   }
-};
-
-// RESET
-export const resetPassword = async (req, res) => {
-  const user = await User.findOne({
-    resetPasswordToken: req.params.token,
-    resetPasswordExpire: { $gt: Date.now() },
-  });
-
-  if (!user)
-    return res.status(400).json({ message: "Invalid token" });
-
-  user.password = req.body.password;
-  user.resetPasswordToken = undefined;
-  user.resetPasswordExpire = undefined;
-
-  await user.save();
-
-  res.json({
-    token: generateToken(user._id),
-    user: { name: user.name, email: user.email },
-  });
 };
