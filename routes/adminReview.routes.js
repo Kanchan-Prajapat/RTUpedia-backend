@@ -5,7 +5,7 @@ import { adminOnly } from "../middleware/adminMiddleware.js";
 const router = express.Router();
 
 /* 🔐 Get Pending Reviews */
-router.get("/pending", adminOnly, protect, async (req, res) => {
+router.get("/pending" , protect, adminOnly,  async (req, res) => {
   try {
     const reviews = await Review.find({ approved: false }).sort({ createdAt: -1 });
     res.json(reviews);
@@ -15,13 +15,13 @@ router.get("/pending", adminOnly, protect, async (req, res) => {
 });
 
 /* ✅ Approve Review */
-router.put("/approve/:id", adminOnly, protect, async (req, res) => {
+router.put("/approve/:id", protect, adminOnly, async (req, res) => {
   await Review.findByIdAndUpdate(req.params.id, { approved: true });
   res.json({ message: "Approved" });
 });
 
 /* ❌ Delete Review */
-router.delete("/:id", adminOnly, protect, async (req, res) => {
+router.delete("/:id", protect, adminOnly, async (req, res) => {
   await Review.findByIdAndDelete(req.params.id);
   res.json({ message: "Deleted" });
 });

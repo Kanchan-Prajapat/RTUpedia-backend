@@ -3,13 +3,7 @@ import Review from "../models/Review.model.js";
 
 const router = express.Router();
 
-// Admin auth (simple key)
-router.use((req, res, next) => {
-  if (req.headers["x-admin-key"] !== "rtupedia_admin_secret") {
-    return res.status(403).json({ error: "Unauthorized" });
-  }
-  next();
-});
+
 
 // GET pending reviews
 router.get("/reviews", async (req, res) => {
