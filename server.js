@@ -30,22 +30,44 @@ dotenv.config();
 /* =======================
    CORS
 ======================= */
+
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:5173",
+  "https://rtupedia.vercel.app",
+  "https://rtupedia.online",
+  "https://www.rtupedia.online",
+];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "http://localhost:5173",
-      "https://rtupedia.vercel.app",
-      "https://rtupedia.online",
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: function (origin, callback) {
+
+      // allow requests with no origin
+      // (mobile apps/postman/etc)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS Not Allowed"));
+      }
+    },
+
+    credentials: true,
+
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+
     allowedHeaders: [
       "Content-Type",
       "Authorization",
-      "x-admin-key"
-    ]
+      "x-admin-key",
+    ],
   })
 );
+
+/* IMPORTANT */
+app.options("*", cors());
 
 /* =======================
    MONGODB
