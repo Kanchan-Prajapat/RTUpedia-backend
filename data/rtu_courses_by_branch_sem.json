@@ -1,0 +1,670 @@
+{
+  "CSE": {
+    "1": [
+      { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+
+    "2": [
+      { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "3" : [
+          { "code": "3CS2-01", "name": "Advanced Engineering Mathematics", "credits": 3 },
+      { "code": "3CS1-02/3CS1-03", "name": "Technical Communication / Managerial Economics and Financial Accounting", "credits": 2 },
+      { "code": "3CS3-04", "name": "Digital Electronics", "credits": 3 },
+      { "code": "3CS4-05", "name": "Data Structures and Algorithms", "credits": 3 },
+      { "code": "3CS4-06", "name": "Object Oriented Programming", "credits": 3 },
+      { "code": "3CS4-07", "name": "Software Engineering", "credits": 3 },
+      { "code": "3CS4-21", "name": "Data Structures and Algorithms Lab", "credits": 1.5 },
+      { "code": "3CS4-22", "name": "Object Oriented Programming Lab", "credits": 1.5 },
+      { "code": "3CS4-23", "name": "Software Engineering Lab", "credits": 1.5 },
+      { "code": "3CS4-24", "name": "Digital Electronics Lab", "credits": 1.5},
+      {"code" : "3CS4-X", "name": "ITS", "credits": 1 },
+      {"code" : "3CS4-25", "name": "Logical Reasoning", "credits": 0.5 }
+    ],
+    "4" : [
+      { "code": "4CS2-01", "name": "Discrete Mathematics Structure", "credits": 3 },
+      { "code": "4CS1-03 / 4CS1-02", "name": "Managerial Economics and Financial Accounting / Technical Communication", "credits": 2 },
+      { "code": "4CS3-04", "name": "Microprocessor & Interfaces", "credits": 3 },
+      { "code": "4CS4-05", "name": "Database Management System", "credits": 3 },
+      { "code": "4CS4-06", "name": "Theory Of Computation", "credits": 3 },
+      { "code": "4CS4-07", "name": "Data Communication and Computer Networks", "credits": 3 },
+      { "code": "4CS4-21", "name": "Microprocessor & Interfaces Lab", "credits": 1 },
+      { "code": "4CS4-22", "name": "Database Management System Lab", "credits": 1.5 },
+      { "code": "4CS4-23", "name": "Network Programming Lab", "credits": 1.5 },
+      { "code": "4CS4-24", "name": "Linux Shell Programming Lab", "credits": 1},
+      { "code": "4CS4-25", "name": "Java Lab", "credits": 1 },
+      {"code" : "4CS4-26", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "5" : [
+      { "code": "5CS3-01", "name": "Information Theory & Coding", "credits": 2 },
+      { "code": "5CS4-02/5CS1-03", "name": "Compiler Design", "credits": 3 },
+      { "code": "5CS4-03", "name": "Operating System", "credits": 3 },
+      { "code": "5CS4-04", "name": "Computer Graphics & Multimedia", "credits": 3 },
+      { "code": "5CS4-05", "name": " Analysis of Algorithms", "credits": 3 },
+      { "code": "5CS4-11", "name": " Wireless Communication", "credits": 2 },
+      { "code": "5CS4-12", "name": "Human Computer Interaction", "credits": 2 },
+      { "code": "5CS4-13", "name": "Bioinformatics", "credits": 2 },
+      { "code": "5CS4-21", "name": "Computer Graphics & Multimedia Lab", "credits": 1 },
+      { "code": "5CS4-22", "name": "Compiler Design Lab", "credits": 1 },
+      { "code": "5CS4-23", "name": "Analysis of Algorithms Lab", "credits": 1 },
+      { "code": "5CS4-24", "name": "Advance Java Lab", "credits": 1 }
+    ],
+    "6" : [
+      { "code": "6CS3-01", "name": "Digital Image Processing", "credits": 2 },
+      { "code": "6CS4-02", "name": "Machine Learning", "credits": 3 },
+      { "code": "6CS4-03", "name": "Information Security System", "credits": 2 },
+      { "code": "6CS4-04", "name": "Computer Architecture and Organization", "credits": 3 },
+      { "code": "6CS4-05", "name": "Artificial Intelligence", "credits": 2 },
+      { "code": "6CS4-06", "name": "Cloud Computing", "credits": 3 },
+      { "code": "6CS5-11", "name": "Distributed System", "credits": 2 },
+      { "code": "6CS5-12", "name": "Software Defined Network", "credits": 2 },
+      { "code": "6CS5-13", "name": "Ecommerce & ERP", "credits": 2 },
+      { "code": "6CS4-21", "name": "Digital Image Processing Lab", "credits": 1.5 },
+      { "code": "6CS4-22", "name": "Machine Learning Lab", "credits": 1.5 },
+      { "code": "6CS4-23", "name": "Python Lab", "credits": 1.5 },
+      { "code": "6CS4-24", "name": "Mobile Application Development Lab", "credits": 1.5 }
+    ],
+    "7" : [
+      { "code": "7CS4-01", "name": "Internet of Things", "credits": 3 },
+      { "code": "7CS4-0X", "name": "Open Elective-I", "credits": 3 },
+      { "code": "7CS4-21", "name": "Internet of Things Lab", "credits": 2 },
+      { "code": "7CS4-22", "name": "Cyber Security Lab", "credits": 2 },
+      { "code": "7CS7-30", "name": "Industrial Training", "credits": 2.5 },
+      { "code": "7CS7-40", "name": "Seminar", "credits": 2 },
+      { "code": "7CS8-00", "name": "Social Outreach, Discipline & Extra Curricular Activities", "credits": 0.5 }
+    ],
+    "8" : [
+      { "code": "8CS4-01", "name": "Big Data Analytics", "credits": 3 },
+      { "code": "8CS4-0X", "name": "Open Elective-II", "credits": 3 },
+      { "code": "8CS4-21", "name": "Big Data Analytics Lab", "credits": 1 },
+      { "code": "8CS4-22", "name": "Software Testing and Validation Lab", "credits": 1 },
+      { "code": "8CS7-00", "name": "Social Outreach, Discipline & Extra Curricular Activities", "credits": 0.5 },
+      { "code": "8CS8-0", "name": "Project Work", "credits": 7 }
+    ]
+  },
+
+  "EE": {
+    "1": [
+       { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "2": [ { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }],
+      "3" :[
+          { "code": "3EE2-01", "name": "Advance Mathematics", "credits": 3},
+          { "code": "3EE1-02/3EE1-03", "name": "Technical Communication / Managerial Economics and Financial Accounting", "credits": 2},
+          { "code": "3EE3-04", "name": "Power Generation Processes", "credits": 2},
+          { "code": "3EE4-05", "name": "Electrical Circuit Analysis", "credits": 3},
+          { "code": "3EE4-06", "name": "Analog Electronics", "credits": 3},
+          { "code": "3EE4-07", "name": "Electrical Machine-I", "credits": 3},
+          { "code": "3EE4-08", "name": "Electromagnetic Fields", "credits": 2},
+          { "code": "3EE4-21", "name": "Analog Electronics Lab", "credits": 1},
+          { "code": "3EE4-22", "name": "Electrical Machines-I Lab", "credits": 2},
+          { "code": "3EE4-23", "name": "Electrical Circuit Design Lab", "credits": 2}
+      ],
+      "4" : [
+          { "code": "4EE2-01", "name": "Biology", "credits": 2},
+          { "code": "4EE1-03/4EE1-02", "name": "Managerial Economics and Financial Accounting / Technical Communication", "credits": 2},
+          { "code": "4EE3-04", "name" : "Electronic Measurement and Instrumentation", "credits" : 2},
+          { "code": "4EE4-05", "name" : "Electrical Machines – II" , "credits" : 3},
+          { "code": "4EE4-06", "name" : "Power Electronics" , "credits" : 3},
+          { "code": "4EE4-07", "name" : "Signals and Systems" , "credits" : 3},
+          { "code": "4EE4-08", "name" : "Digital Electronics" , "credits" : 2},
+          { "code": "4EE4-21", "name" : "Electrical Machines - II Lab", "credits" : 2},
+          { "code": "4EE4-22", "name" : "Power Electronics Lab" , "credits" : 2},
+          { "code": "4EE4-23", "name" : "Digital Electronics Lab" , "credits" : 1},
+          { "code": "4EE4-24", "name" :  "Measurement Lab" , "credits" : 1}
+      ],
+      "5" : [
+         { "code": "5EE3-01", "name": "ELECTRICAL MATERIALS", "credits": 2},
+          { "code": "5EE4-02", "name": "POWER SYSTEM - I", "credits": 3},
+          { "code": "5EE4-03", "name" : "CONTROL SYSTEM", "credits" : 3},
+          { "code": "5EE4-04", "name" : "MICROPROCESSOR" , "credits" : 3},
+          { "code": "5EE4-05", "name" : "ELECTRICAL MACHINE DESIGN" , "credits" : 3},
+          { "code": "5EE5-11", "name" : "RESTRUCTURED POWER SYSTEM" , "credits" : 2},
+          { "code": "5EE5-12", "name" : "ELECTROMAGNETIC WAVE" , "credits" : 2},
+          { "code": "5EE5-13", "name" : "DIGITAL CONTROL SYSTEM", "credits" : 2},
+          { "code": "5EE4-21", "name" : "POWER SYSTEM - I LAB" , "credits" : 1},
+          { "code": "5EE4-22", "name" : "CONTROL SYSTEM LAB" , "credits" : 1},
+          { "code": "5EE4-22", "name" : "MICROPROCESSOR LAB" , "credits" : 1},
+          { "code": "5EE4-24", "name" : "SYSTEM PROGRAMMING LAB" , "credits" : 1}
+      ],
+      "6" : [
+         { "code": "6EE3-01", "name": "COMPUTER ARCHITECTURE", "credits": 2},
+          { "code": "6EE4-02", "name": "POWER SYSTEM - II", "credits": 3},
+          { "code": "5EE4-03", "name" : "POWER SYSTEM PROTECTION", "credits" : 3},
+          { "code": "6EE4-04", "name" : "ELECTRICAL ENERGY CONSERVATION And AUDITING", "credits" : 3},
+          { "code": "6EE4-05", "name": "ELECTRICAL DRIVES", "credits" : 3},
+          { "code": "6EE5-11", "name" : "POWER SYSTEM PLANNING", "credits" : 3},
+          {"code" : "6EE5-12", "name" : "DIGITAL SIGNAL PROCESSING", "credits" : 3},
+          { "code": "6EE5-13", "name" : "ELECTRICAL AND HYBRID VEHICLES", "credits" : 3},
+          { "code": "6EE4-21", "name" : "POWER SYSTEM - II LAB", "credits" : 2},
+          { "code": "6EE4-22", "name" : "ELECTRICAL DRIVE LAB", "credits" : 2},
+          { "code": "6EE4-23", "name" : "POWER SYSTEM PROTECTION LAB", "credits" : 1},
+          { "code": "6EE4-24", "name" : "MODELLING AND SIMULATION LAB", "credits" : 1}
+      ],
+      "7" :[
+          { "code": "7EE4-01", "name": "Wind and Solar Energy Systems", "credits": 3 },
+          { "code": "7EE4-0X", "name": "Open Elective-I", "credits": 3 },
+          { "code": "7EE4-21", "name": "RENEWABLE ENERGY SOURCES LAB", "credits": 2 },
+          { "code": "7EE4-22", "name": "SIMULATION LAB", "credits": 2 },
+          { "code": "7EE7-30", "name": "Industrial Training", "credits": 2.5 },
+          { "code": "7EE7-40", "name": "Seminar", "credits": 2 },
+          { "code": "7EE8-00", "name": "Social Outreach, Discipline & Extra Curricular Activities", "credits": 0.5 }
+      ],
+      "8" : [
+
+      ]
+  },
+
+  "ME": {
+    "1": [
+      { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "2": [ { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }],
+      "3" : [
+
+      ],
+      "4" : [
+       { "code": "4ME2-01", "name": "DATA ANALYTICS", "credits": 2 },
+       { "code": "4ME1-03/4ME1-02", "name": "Managerial Economics and Financial Accounting / Technical Communication", "credits": 2 },
+       { "code": "4ME3-04", "name": "DIGITAL ELECTRONICS", "credits": 2 },
+       { "code": "4ME4-05", "name": "FLUID MECHANICS AND FLUID MACHINES", "credits": 4 },
+       { "code": "4ME4-06", "name": "MANUFACTURING PROCESSES", "credits": 3 },
+       { "code": "4ME4-07", "name": "THEORY OF MACHINES", "credits": 4 },
+       { "code": "4ME3-21", "name": "DIGITAL ELECTRONICS LAB", "credits": 1.5 },
+       { "code": "4ME4-22", "name": "FLUID MECHANICS LAB", "credits": 1.5 },
+       { "code": "4ME4-23", "name": "PRODUCTION PRACTICE LAB", "credits": 1.5 },
+       { "code": "4ME4-24", "name": "THEORY OF MACHINES LAB", "credits": 1.5 }
+      ],
+      "5" : [
+       { "code": "5ME3-01", "name": "MECHATRONIC SYSTEMS", "credits": 2 },
+       { "code": "5ME4-02", "name" : "HEAT TRANSFER", "credits" : 3 },
+       { "code": "5ME4-03", "name" : "MANUFACTURING TECHNOLOGY", "credits" : 3 },  
+       { "code": "5ME4-04", "name" : "DESIGN OF MACHINE ELEMENTS - I", "credits" : 3 },
+       { "code": "5ME4-05", "name" : "PRINCIPLES OF MANAGEMENT", "credits" : 2 },
+       { "code": "5ME5-11", "name" : "STEAM ENGINEERING", "credits" : 3 },
+       { "code": "5ME5-12", "name" : "AUTOMOBILE ENGINEERING", "credits" : 2 },
+       { "code": "5ME5-13", "name" : "NON DESTRUCTIVE EVALUATION AND TESTING", "credits" : 3 },
+       { "code": "5ME3-21", "name" : "MECHATRONICS LAB", "credits" : 1 },
+       { "code": "5ME4-22", "name" : "HEAT TRANSFER LAB", "credits" : 1 },
+       { "code": "5ME4-23", "name" : "PRODUCTION ENGINEERING LAB", "credits" : 1 },
+       { "code": "5ME4-24", "name" : "MACHINE DESIGN PRACTICE - I", "credits" : 1 }
+      ],
+      "6" : [
+        { "code": "6ME3-01", "name": " MEASUREMENT and METROLOGY", "credits": 2 },
+        { "code": "6ME4-02", "name": "COMPUTER INTEGRATED MANUFACTURING SYSTEMS (CIMS)", "credits": 3 },
+        { "code": "6ME4-03", "name": "MECHAN ICAL VIBRATIONS", "credits": 3 },
+        { "code": "6ME4-04", "name": "DESIGN OF MACHINE ELEMENTS- II", "credits": 3 },
+        { "code": "6ME4-05", "name": "QUALITY MANAGEMENT", "credits": 3 },
+        { "code": "6ME5-11", "name": "REFRIGERATION AND AIR CONDITIONING", "credits": 3 },
+        { "code": "6ME5-12", "name": "NON CONVENTIONAL MACHINING METHODS", "credits": 3 },
+        { "code": "6ME5-13", "name": "MICRO ELECTRO AND MECHANICAL SYSTEMS (MEMS) and MICROSYSTEMS", "credits": 2 },
+        { "code": "6ME4-21", "name": "CIMS LAB", "credits": 1.5 },
+        { "code": "6ME4-22", "name": "VIBRATION LAB", "credits": 1.5 },
+        { "code": "6ME4-23", "name": "MACHINE DESIGN PRACTICE – II", "credits": 1.5 },
+        { "code": "6ME4-24", "name": "THERMAL ENGINEERING LAB-1", "credits": 1.5 }
+      ],
+      "7" :[
+
+      ],
+      "8" : [
+
+      ]
+  },
+
+  "CE": {
+    "1": [
+      { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "2": [
+      { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }],
+      "3" : [
+
+      ],
+      "4" : [
+        { "code": "4CE2-01", "name": "ADVANCE ENGINEERING MATHEMATICS-II", "credits": 2 },
+        { "code": "4CE1-03/4CE1-02", "name": "Managerial Economics and Financial Accounting / Technical Communication", "credits": 2 },
+        { "code": "4CE3-04", "name": "BASIC ELECTRONICS FOR CIVIL ENGINEERING APPLICATIONS", "credits": 2 },
+        { "code": "4CE4-05", "name": "STRENGTH OF MATERIALS", "credits": 3 },
+        { "code": "4CE4-06", "name": "HYDRAULICS ENGINEERING", "credits": 3 },
+        { "code": "4CE4-07", "name": "BUILDING PLANNING", "credits": 2 },
+        { "code": "4CE4-08", "name": "CONCRETE TECHNOLOGY", "credits": 3 },
+        { "code": "4CE3-21", "name": "MATERIAL TESTING LAB", "credits": 1 },
+        { "code": "4CE4-22", "name": "HYDRAULICS ENGINEERING LAB", "credits": 1 },
+        { "code": "4CE4-23", "name": "BUILDING DRAWING", "credits": 1.5 },
+        { "code": "4CE4-24", "name": "ADVANCED SURVEYING LAB", "credits": 1 },
+        { "code": "4CE4-25", "name": "CONCRETE LAB", "credits": 1.5 }
+      ],
+      "5" :[
+
+      ],
+      "6" : [
+
+      ],
+      "7" : [
+
+      ],
+      "8" : [
+      ]
+  },
+
+  "CHEM": {
+    "1": [
+      { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "2": [
+      { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }],
+      "3" : [
+
+      ],
+      "4" : [
+        { "code" : "4CH2-01", "name" : "Numerical Methods in Chemical Engineering", "credits" : 3 },
+        { "code" : "4CH1-03/4CH1-02", "name" : "Managerial Economics and Financial Accounting / Technical Communication", "credits" : 2 },
+        { "code" : "4CH3-04", "name" : "Material Science and Technology", "credits" : 3 },
+        { "code" : "4CH4-05", "name" : "Heat Transfer", "credits" : 3 },
+        { "code" : "4CH4-06", "name" : "Mass Transfer-I", "credits" : 3 },
+        { "code" : "4CH4-07", "name" : "Thermodynamics – II (Common with Petroleum Engineering & Petrochemical Engineering", "credits" : 3 },
+        { "code" : "4CH3-21", "name" : "Heat Transfer Lab", "credits" : 2 },
+        { "code" : "4CH4-22", "name" : "Mass Transfer – Lab I", "credits" : 2 },
+        { "code" : "4CH4-23", "name" : "Numerical Methods in Chemical Engineering Lab", "credits" : 2 }
+      ],
+      "5" : [
+        { "code" : "5CH3-01", "name" : "Environmental Pollution Control", "credits" : 2 },
+        { "code" : "5CH4-02", "name" : "Chemical Reaction Engineering –I", "credits" : 3 },
+        { "code" : "5CH4-03", "name" : "Mass Transfer-II", "credits" : 3 },
+        { "code" : "5CH4-04", "name" : "Process Equipment Design –I", "credits" : 3 },
+        { "code" : "5CH4-05", "name" : "Inorganic Chemical Technology", "credits" : 3 },
+        { "code" : "5CH5-11", "name" : "Natural Gas Engineering", "credits" : 2 },
+        { "code" : "5CH5-12", "name" : "Process Instrumentation", "credits" : 2 },
+        { "code" : "5CH5-13", "name" : "Energy Resource and Utilization", "credits" : 2 },
+        { "code" : "5CH4-21", "name" : "Chemical Reaction Engineering Lab-I", "credits" : 2 },
+        { "code" : "5CH4-22", "name" : "Mass Transfer – Lab II", "credits" : 2 },
+        { "code" : "5CH4-23", "name" : "Environmental Engineering Lab", "credits" : 1 },
+        { "code" : "5CH7-30", "name" : "Industrial Training", "credits" : 2.5 },
+        { "code" : "5CH8-00", "name" : "Social Outreach, Discipline & Extra Curricular Activities (SODECA)", "credits" : 0.5 }
+      ],  
+      "6" : [
+        { "code" : "6CH3-01", "name" : "Plant Design and Economics", "credits" : 2 },
+        { "code" : "6CH4-02", "name" : "Chemical Reaction Engineering-II", "credits" : 3 },
+        { "code" : "6CH4-03", "name" : "Process Equipment Design –II", "credits" : 3 },
+        { "code" : "6CH4-04", "name" : "Process Dynamics and Control", "credits" : 3 },
+        { "code" : "6CH4-05", "name" : "Petroleum Refinery Engineering", "credits" : 3 },
+        { "code" : "6CH5-11", "name" : "Organic Chemical Technology", "credits" : 3 },
+        { "code" : "6CH5-12", "name" : "Advanced Separation Process", "credits" : 3 },
+        { "code" : "6CH5-13", "name" : "Polymer Science & Technology", "credits" : 3 },
+        { "code" : "6CH4-21", "name" : "Petroleum Product Testing Lab", "credits" : 2 },
+        { "code" : "6CH4-22", "name" : "Process Dynamics and Control Lab", "credits" : 2 },
+        { "code" : "6CH4-23", "name" : "Chemical Reaction Engineering Lab-II", "credits" : 1 },
+        { "code" : "6CH5-24", "name" : "Plant Design and Economics Sessional", "credits" : 1 },
+        { "code" : "6CH8-00", "name" : "Social Outreach, Discipline & Extra Curricular Activities (SODECA)", "credits" : 0.5 }
+      ],
+      "7" : [
+      ],
+      "8" : [
+      ]
+  },
+  "AIDS" : {
+    "1" : [
+      { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "2" : [
+      { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+     "3" : [
+          { "code": "3CS2-01", "name": "Advanced Engineering Mathematics", "credits": 3 },
+      { "code": "3CS1-02/3CS1-03", "name": "Technical Communication / Managerial Economics and Financial Accounting", "credits": 2 },
+      { "code": "3CS3-04", "name": "Digital Electronics", "credits": 3 },
+      { "code": "3CS4-05", "name": "Data Structures and Algorithms", "credits": 3 },
+      { "code": "3CS4-06", "name": "Object Oriented Programming", "credits": 3 },
+      { "code": "3CS4-07", "name": "Software Engineering", "credits": 3 },
+      { "code": "3CS4-21", "name": "Data Structures and Algorithms Lab", "credits": 1.5 },
+      { "code": "3CS4-22", "name": "Object Oriented Programming Lab", "credits": 1.5 },
+      { "code": "3CS4-23", "name": "Software Engineering Lab", "credits": 1.5 },
+      { "code": "3CS4-24", "name": "Digital Electronics Lab", "credits": 1.5}
+    ],
+    "4" : [
+      { "code": "4CS2-01", "name": "Discrete Mathematics Structure", "credits": 3 },
+      { "code": "4CS1-03 / 4CS1-02", "name": "Managerial Economics and Financial Accounting / Technical Communication", "credits": 2 },
+      { "code": "4CS3-04", "name": "Microprocessor & Interfaces", "credits": 3 },
+      { "code": "4CS4-05", "name": "Database Management System", "credits": 3 },
+      { "code": "4CS4-06", "name": "Theory Of Computation", "credits": 3 },
+      { "code": "4CS4-07", "name": "Data Communication and Computer Networks", "credits": 3 },
+      { "code": "4CS4-21", "name": "Microprocessor & Interfaces Lab", "credits": 1 },
+      { "code": "4CS4-22", "name": "Database Management System Lab", "credits": 1.5 },
+      { "code": "4CS4-23", "name": "Network Programming Lab", "credits": 1.5 },
+      { "code": "4CS4-24", "name": "Linux Shell Programming Lab", "credits": 1},
+      { "code": "4CS4-25", "name": "Java Lab", "credits": 1 }
+    ],
+    "5" :[
+
+    ],
+    "6" : [
+
+    ],
+    "7" : [ 
+
+    ],
+    "8" : [ 
+
+    ]
+  },
+  "IOT" : {
+    "1": [
+      { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+
+    "2": [
+      { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "3" : [
+          { "code": "3CS2-01", "name": "Advanced Engineering Mathematics", "credits": 3 },
+      { "code": "3CS1-02/3CS1-03", "name": "Technical Communication / Managerial Economics and Financial Accounting", "credits": 2 },
+      { "code": "3CS3-04", "name": "Digital Electronics", "credits": 3 },
+      { "code": "3CS4-05", "name": "Data Structures and Algorithms", "credits": 3 },
+      { "code": "3CS4-06", "name": "Object Oriented Programming", "credits": 3 },
+      { "code": "3CS4-07", "name": "Software Engineering", "credits": 3 },
+      { "code": "3CS4-21", "name": "Data Structures and Algorithms Lab", "credits": 1.5 },
+      { "code": "3CS4-22", "name": "Object Oriented Programming Lab", "credits": 1.5 },
+      { "code": "3CS4-23", "name": "Software Engineering Lab", "credits": 1.5 },
+      { "code": "3CS4-24", "name": "Digital Electronics Lab", "credits": 1.5}
+    ],
+    "4" : [
+      { "code": "4CS2-01", "name": "Discrete Mathematics Structure", "credits": 3 },
+      { "code": "4CS1-03 / 4CS1-02", "name": "Managerial Economics and Financial Accounting / Technical Communication", "credits": 2 },
+      { "code": "4CS3-04", "name": "Microprocessor & Interfaces", "credits": 3 },
+      { "code": "4CS4-05", "name": "Database Management System", "credits": 3 },
+      { "code": "4CS4-06", "name": "Theory Of Computation", "credits": 3 },
+      { "code": "4CS4-07", "name": "Data Communication and Computer Networks", "credits": 3 },
+      { "code": "4CS4-21", "name": "Microprocessor & Interfaces Lab", "credits": 1 },
+      { "code": "4CS4-22", "name": "Database Management System Lab", "credits": 1.5 },
+      { "code": "4CS4-23", "name": "Network Programming Lab", "credits": 1.5 },
+      { "code": "4CS4-24", "name": "Linux Shell Programming Lab", "credits": 1},
+      { "code": "4CS4-25", "name": "Java Lab", "credits": 1 }
+    ],
+    "5" : [
+      { "code": "5CS3-01", "name": "Information Theory & Coding", "credits": 2 },
+      { "code": "5CS4-02/5CS1-03", "name": "Compiler Design", "credits": 3 },
+      { "code": "5CS4-03", "name": "Operating System", "credits": 3 },
+      { "code": "5CS4-04", "name": "Computer Graphics & Multimedia", "credits": 3 },
+      { "code": "5CS4-05", "name": " Analysis of Algorithms", "credits": 3 },
+      { "code": "5CS4-11", "name": " Wireless Communication", "credits": 2 },
+      { "code": "5CS4-12", "name": "Human Computer Interaction", "credits": 2 },
+      { "code": "5CS4-13", "name": "Bioinformatics", "credits": 2 },
+      { "code": "5CS4-21", "name": "Computer Graphics & Multimedia Lab", "credits": 1 },
+      { "code": "5CS4-22", "name": "Compiler Design Lab", "credits": 1 },
+      { "code": "5CS4-23", "name": "Analysis of Algorithms Lab", "credits": 1 },
+      { "code": "5CS4-24", "name": "Advance Java Lab", "credits": 1 }
+    ],
+    "6" : [
+      { "code": "6CS3-01", "name": "Digital Image Processing", "credits": 2 },
+      { "code": "6CS4-02", "name": "Machine Learning", "credits": 3 },
+      { "code": "6CS4-03", "name": "Information Security System", "credits": 2 },
+      { "code": "6CS4-04", "name": "Computer Architecture and Organization", "credits": 3 },
+      { "code": "6CS4-05", "name": "Artificial Intelligence", "credits": 2 },
+      { "code": "6CS4-06", "name": "Cloud Computing", "credits": 3 },
+      { "code": "6CS5-11", "name": "Distributed System", "credits": 2 },
+      { "code": "6CS5-12", "name": "Software Defined Network", "credits": 2 },
+      { "code": "6CS5-13", "name": "Ecommerce & ERP", "credits": 2 },
+      { "code": "6CS4-21", "name": "Digital Image Processing Lab", "credits": 1.5 },
+      { "code": "6CS4-22", "name": "Machine Learning Lab", "credits": 1.5 },
+      { "code": "6CS4-23", "name": "Python Lab", "credits": 1.5 },
+      { "code": "6CS4-24", "name": "Mobile Application Development Lab", "credits": 1.5 }
+    ],
+    "7" : [
+      { "code": "7CS4-01", "name": "Internet of Things", "credits": 3 },
+      { "code": "7CS4-0X", "name": "Open Elective-I", "credits": 3 },
+      { "code": "7CS4-21", "name": "Internet of Things Lab", "credits": 2 },
+      { "code": "7CS4-22", "name": "Cyber Security Lab", "credits": 2 },
+      { "code": "7CS7-30", "name": "Industrial Training", "credits": 2.5 },
+      { "code": "7CS7-40", "name": "Seminar", "credits": 2 },
+      { "code": "7CS8-00", "name": "Social Outreach, Discipline & Extra Curricular Activities", "credits": 0.5 }
+    ],
+    "8" : [
+      { "code": "8CS4-01", "name": "Big Data Analytics", "credits": 3 },
+      { "code": "8CS4-0X", "name": "Open Elective-II", "credits": 3 },
+      { "code": "8CS4-21", "name": "Big Data Analytics Lab", "credits": 1 },
+      { "code": "8CS4-22", "name": "Software Testing and Validation Lab", "credits": 1 },
+      { "code": "8CS7-00", "name": "Social Outreach, Discipline & Extra Curricular Activities", "credits": 0.5 },
+      { "code": "8CS8-0", "name": "Project Work", "credits": 7 }
+    ]
+  },
+  "CY" : {
+    "1": [
+      { "code": "1FY2-01", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "1FY2-02/ 1FY2-03", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "1FY2-04/ 1FY2-05", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "1FY3-06/ 1FY3-07", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "1FY3-08/ 1FY3-09", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "1FY2-20/ 1FY2-21", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "1FY1-22/ 1FY1-23", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "1FY3-24/ 1FY3-25", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "1FY3-26/ 1FY3-27", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "1FY3-28/ 1FY3-29", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+
+    "2": [
+      { "code": "2FY2-01", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "2FY2-03/ 2FY2-02", "name": " Engineering Chemistry / Engineering Physics", "credits": 4 },
+      { "code": "2FY1-05/ 2FY2-04", "name": "Human Values / Communication Skills", "credits": 2 },
+      { "code": "2FY3-07/ 2FY3-06", "name": "Basic Mechanical Engineering / Programming and Problem Solving", "credits": 2 },
+      { "code": "2FY3-09/ 2FY3-08", "name": "Civil Engineering / Basic Electrical", "credits": 2 },
+      { "code": "2FY2-21/ 2FY2-20", "name": "Chemistry Lab / Physics", "credits": 1 },
+      { "code": "2FY1-23/ 2FY1-22", "name": "Human Values Activities and Sports/ Language Lab", "credits": 1 },
+      { "code": "2FY3-25/ 2FY3-24", "name": "Manufacturing Practices Workshop / Computer Programming Lab ", "credits": 1.5 },
+      { "code": "2FY3-27/ 2FY3-26", "name": "Basic Civil Engineering Lab / Basic Electrical Engineering Lab ", "credits": 1 },
+      { "code": "2FY3-29/ 2FY3-28", "name": "Computer Aided Machine Drawing / Computer Aided Engineering Graphics ", "credits": 1.5 },
+      { "code": "1FY8-0X", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "3" : [
+          { "code": "3CS2-01", "name": "Advanced Engineering Mathematics", "credits": 3 },
+      { "code": "3CS1-02/3CS1-03", "name": "Technical Communication / Managerial Economics and Financial Accounting", "credits": 2 },
+      { "code": "3CS3-04", "name": "Digital Electronics", "credits": 3 },
+      { "code": "3CS4-05", "name": "Data Structures and Algorithms", "credits": 3 },
+      { "code": "3CS4-06", "name": "Object Oriented Programming", "credits": 3 },
+      { "code": "3CS4-07", "name": "Software Engineering", "credits": 3 },
+      { "code": "3CS4-21", "name": "Data Structures and Algorithms Lab", "credits": 1.5 },
+      { "code": "3CS4-22", "name": "Object Oriented Programming Lab", "credits": 1.5 },
+      { "code": "3CS4-23", "name": "Software Engineering Lab", "credits": 1.5 },
+      { "code": "3CS4-24", "name": "Digital Electronics Lab", "credits": 1.5}
+    ],
+    "4" : [
+      { "code": "4CS2-01", "name": "Discrete Mathematics Structure", "credits": 3 },
+      { "code": "4CS1-03 / 4CS1-02", "name": "Managerial Economics and Financial Accounting / Technical Communication", "credits": 2 },
+      { "code": "4CS3-04", "name": "Microprocessor & Interfaces", "credits": 3 },
+      { "code": "4CS4-05", "name": "Database Management System", "credits": 3 },
+      { "code": "4CS4-06", "name": "Theory Of Computation", "credits": 3 },
+      { "code": "4CS4-07", "name": "Data Communication and Computer Networks", "credits": 3 },
+      { "code": "4CS4-21", "name": "Microprocessor & Interfaces Lab", "credits": 1 },
+      { "code": "4CS4-22", "name": "Database Management System Lab", "credits": 1.5 },
+      { "code": "4CS4-23", "name": "Network Programming Lab", "credits": 1.5 },
+      { "code": "4CS4-24", "name": "Linux Shell Programming Lab", "credits": 1},
+      { "code": "4CS4-25", "name": "Java Lab", "credits": 1 }
+    ],
+    "5" : [
+      { "code": "5CS3-01", "name": "Information Theory & Coding", "credits": 2 },
+      { "code": "5CS4-02/5CS1-03", "name": "Compiler Design", "credits": 3 },
+      { "code": "5CS4-03", "name": "Operating System", "credits": 3 },
+      { "code": "5CS4-04", "name": "Computer Graphics & Multimedia", "credits": 3 },
+      { "code": "5CS4-05", "name": " Analysis of Algorithms", "credits": 3 },
+      { "code": "5CS4-11", "name": " Wireless Communication", "credits": 2 },
+      { "code": "5CS4-12", "name": "Human Computer Interaction", "credits": 2 },
+      { "code": "5CS4-13", "name": "Bioinformatics", "credits": 2 },
+      { "code": "5CS4-21", "name": "Computer Graphics & Multimedia Lab", "credits": 1 },
+      { "code": "5CS4-22", "name": "Compiler Design Lab", "credits": 1 },
+      { "code": "5CS4-23", "name": "Analysis of Algorithms Lab", "credits": 1 },
+      { "code": "5CS4-24", "name": "Advance Java Lab", "credits": 1 }
+    ],
+    "6" : [
+      { "code": "6CS3-01", "name": "Digital Image Processing", "credits": 2 },
+      { "code": "6CS4-02", "name": "Machine Learning", "credits": 3 },
+      { "code": "6CS4-03", "name": "Information Security System", "credits": 2 },
+      { "code": "6CS4-04", "name": "Computer Architecture and Organization", "credits": 3 },
+      { "code": "6CS4-05", "name": "Artificial Intelligence", "credits": 2 },
+      { "code": "6CS4-06", "name": "Cloud Computing", "credits": 3 },
+      { "code": "6CS5-11", "name": "Distributed System", "credits": 2 },
+      { "code": "6CS5-12", "name": "Software Defined Network", "credits": 2 },
+      { "code": "6CS5-13", "name": "Ecommerce & ERP", "credits": 2 },
+      { "code": "6CS4-21", "name": "Digital Image Processing Lab", "credits": 1.5 },
+      { "code": "6CS4-22", "name": "Machine Learning Lab", "credits": 1.5 },
+      { "code": "6CS4-23", "name": "Python Lab", "credits": 1.5 },
+      { "code": "6CS4-24", "name": "Mobile Application Development Lab", "credits": 1.5 }
+    ],
+    "7" : [
+      { "code": "7CS4-01", "name": "Internet of Things", "credits": 3 },
+      { "code": "7CS4-0X", "name": "Open Elective-I", "credits": 3 },
+      { "code": "7CS4-21", "name": "Internet of Things Lab", "credits": 2 },
+      { "code": "7CS4-22", "name": "Cyber Security Lab", "credits": 2 },
+      { "code": "7CS7-30", "name": "Industrial Training", "credits": 2.5 },
+      { "code": "7CS7-40", "name": "Seminar", "credits": 2 },
+      { "code": "7CS8-00", "name": "Social Outreach, Discipline & Extra Curricular Activities", "credits": 0.5 }
+    ],
+    "8" : [
+      { "code": "8CS4-01", "name": "Big Data Analytics", "credits": 3 },
+      { "code": "8CS4-0X", "name": "Open Elective-II", "credits": 3 },
+      { "code": "8CS4-21", "name": "Big Data Analytics Lab", "credits": 1 },
+      { "code": "8CS4-22", "name": "Software Testing and Validation Lab", "credits": 1 },
+      { "code": "8CS7-00", "name": "Social Outreach, Discipline & Extra Curricular Activities", "credits": 0.5 },
+      { "code": "8CS8-0", "name": "Project Work", "credits": 7 }
+    ]
+  }
+}

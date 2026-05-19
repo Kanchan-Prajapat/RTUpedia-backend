@@ -10,6 +10,7 @@ import reviewRoutes from "./routes/review.routes.js";
 import adminRoutes from "./routes/admin.routes.js";
 import authRoutes from "./routes/authRoutes.js";
 import adminReviewRoutes from "./routes/adminReview.routes.js";
+import sgpaPDFRoutes from "./routes/sgpaPDFRoutes.js";
 
 
 /* =======================
@@ -34,7 +35,8 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:5173",
-      "https://rtupedia.vercel.app"
+      "https://rtupedia.vercel.app",
+      "https://rtupedia.online",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: [
@@ -73,6 +75,7 @@ app.use("/api/reviews", reviewRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/admin/reviews", adminReviewRoutes);
+app.use("/api/sgpa", sgpaPDFRoutes);
 /* =======================
    FILE SYSTEM (PYQs) — DO NOT TOUCH
 ======================= */
