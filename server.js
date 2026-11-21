@@ -1,3 +1,6 @@
+
+import dns from "node:dns";
+
 import express from "express";
 import fs from "fs";
 import path from "path";
@@ -12,20 +15,19 @@ import authRoutes from "./routes/authRoutes.js";
 import adminReviewRoutes from "./routes/adminReview.routes.js";
 import sgpaPDFRoutes from "./routes/sgpaPDFRoutes.js";
 
+// DNS configuration BEFORE MongoDB connection
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
-/* =======================
-   BASIC SETUP
-======================= */
+/* BASIC SETUP */
 const app = express();
 app.use(express.json());
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-/* =======================
-   LOAD ENV (LOCAL + RENDER)
-======================= */
+/* LOAD ENV */
 dotenv.config();
+
 
 /* =======================
    CORS
