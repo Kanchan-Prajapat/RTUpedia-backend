@@ -11,6 +11,7 @@ import adminRoutes from "./routes/admin.routes.js";
 import authRoutes from "./routes/authRoutes.js";
 import adminReviewRoutes from "./routes/adminReview.routes.js";
 import sgpaPDFRoutes from "./routes/sgpaPDFRoutes.js";
+import notesRoutes from "./routes/notes.routes.js";
 
 
 /* =======================
@@ -98,6 +99,7 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/admin/reviews", adminReviewRoutes);
 app.use("/api/sgpa", sgpaPDFRoutes);
+app.use("/api/notes", notesRoutes);
 /* =======================
    FILE SYSTEM (PYQs) — DO NOT TOUCH
 ======================= */
